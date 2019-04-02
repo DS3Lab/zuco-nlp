@@ -1,0 +1,79 @@
+word_embeddings:
+  # Two types of word embedding algorithm (word2vec and glove) are supported.
+  # Just set the default to empty string to disable the word embeddings
+  default: glove
+  glove:
+    path: ./embeddings/glove.6B.300d.txt
+    dimension: 300
+    length: 400000
+
+datasets:
+  # ZuCo datasets: zuco_nr_cleanphrases, zuco_tsr_cleanphrases
+  default: zuco_nr_cleanphrases
+  # Load text files with categories as subfolder names.
+  # Individual samples are assumed to be files stored
+  # a two levels folder structure such as the following:
+  # container_folder/
+  #   category_1_folder/
+  #     file_1.txt file_2.txt ... file_42.txt
+  #   category_2_folder/
+  #     file_43.txt file_44.txt ...
+  #
+  # directory with ZuCo matlab files containing EEG and ET data, downloaded from https://osf.io/q3zws/
+  matlab_files: /Users/norahollenstein/Downloads/results_NR/
+  zuco_nr_cleanphrases:
+    container_path: "data/zuco_nr_cleanphrases/"
+    categories:
+      - AWARD
+      - EDUCATION
+      - EMPLOYER
+      - FOUNDER
+      - JOBTITLE
+      - NATIONALITY
+      - POLITICALAFFILIATION
+      - VISITED
+      - WIFE
+      - BIRTHPLACE
+      - DEATHPLACE
+    entities_file_path: "data/entities_zuco_nr_cleanphrases.json"
+    relative_positions_first_file_path: "preprocessing/relative_positions_firstzuco_nr_cleanphrases.txt"
+    relative_positions_second_file_path: "preprocessing/relative_positions_secondzuco_nr_cleanphrases.txt"
+    pos_tags_file_path: "preprocessing/postagszuco_nr_cleanphrases.txt"
+
+train_test_split:
+  #How to split the dataset into train and test data
+  type: kfold
+  evaluation: zuco_nr_cleanphrases
+  kfold:
+    number_of_folds: 5
+  fixed_split:
+    #Use a fixed range of indices for testing (extreme values included)
+    #not used yet
+    zuco_nr_cleanphrases:
+      zuco_nr_cleanphrases:
+        start_test_split_index: 0
+        end_test_split_index: 156
+
+# Check feature_engineering/README.md for details on these cognitive features
+features:
+  # Set to True or False (all False = baseline model)
+  gaze: True
+  # False (for raw normalized features) or integer (for number of bins)
+  binned: False
+  eeg: True
+  # options for word level features: RAW_FEATURES, RAW_NORMALIZED_FEATURES, POWER_SPECTRUM_FEATURES_TRT, POWER_SPECTRUM_FEATURES_FF
+  eeg_config: RAW_NORMALIZED_FEATURES
+  subjects:
+    - ZAB
+    - ZDM
+    - ZDN
+    - ZGW
+    - ZJN
+    - ZKH
+    - ZKW
+    - ZMG
+    - ZJM
+    - ZKB
+
+
+
