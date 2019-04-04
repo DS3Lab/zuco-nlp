@@ -1,4 +1,4 @@
-##Code
+## Code
 
 The code for these multi-task learning experiments in `sluice-networks/` was adapted from the [Sluice Networks repository](https://github.com/sebastianruder/sluice-networks).
 
@@ -12,7 +12,7 @@ Please also refer to their paper if reusing this code.
 
 In this version we only adapted the reading of the input data and the possible tasks and task combinations. The original [Sluice Networks repository](https://github.com/sebastianruder/sluice-networks) includes installation instructions.
 
-##Data
+## Data
 
 The data for each NLP task is provided separately in `data/`. It contains the following features in each row:
 

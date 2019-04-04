@@ -1,4 +1,4 @@
-##Code
+## Code
 
 The code for these multi-task learning experiments in `ner-tagger/` was adapted from the [Named Entity Recognition Tool repository](https://github.com/glample/tagger).
 
@@ -13,7 +13,7 @@ The original [Named Entity Recognition Tool repository](https://github.com/glamp
 In this version adapted the reading of the input data to include eye-tracking and EEG features and the addition of eye-tracking/EEG embeddings to the neural architecture.
 Additionaly, we changed the code to work with Python 3. 
 
-##Data
+## Data
 
 The NER annotations can be found [here](https://github.com/DS3Lab/ner-at-first-sight).
 
