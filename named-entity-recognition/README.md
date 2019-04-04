@@ -30,12 +30,12 @@ Sample data including EEG and eye-tracking features can be found in `data/`. It 
 
 The following command trains an NER model including eye-tracking _and_ EEG features:
 
-`THEANO_FLAGS='dnn.conv.algo_bwd_filter=deterministic,dnn.conv.algo_bwd_data=deterministic' python3 train.py --train ${train-file} \ 
-                                                                                                                 --dev ${dev-file} \
-                                                                                                                 --test ${test-file} \
-                                                                                                                 --tag_scheme iob \
-                                                                                                                 --zeros 1 \
-                                                                                                                 --with_eeg_gaze 1 \
-                                                                                                                 --bins ${number-of-bins} \
-                                                                                                                 --fold ${number-of-fold} \`
+`THEANO_FLAGS='dnn.conv.algo_bwd_filter=deterministic,dnn.conv.algo_bwd_data=deterministic' python3 train.py --train ${train-file}  
+                                                                                                                 --dev ${dev-file} 
+                                                                                                                 --test ${test-file} 
+                                                                                                                 --tag_scheme iob 
+                                                                                                                 --zeros 1 
+                                                                                                                 --with_eeg_gaze 1 
+                                                                                                                 --bins ${number-of-bins} 
+                                                                                                                 --fold ${number-of-fold} `
 
