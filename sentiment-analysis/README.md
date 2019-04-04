@@ -1,10 +1,8 @@
-## How to run the "Passive Human Supervision" experiments
-
 ## Data
 
 In addition to the code in this repository, wou will need the following data: \
-    - The Google 300 dimensional embeddings from https://github.com/mmihaltz/word2vec-GoogleNews-vectors. The embedding file must be placed in the folder `embeddings/`. \
-	- The ZuCo data in their latest (January 2019) format. Those data must be placed in the `Data_to_preprocess` folder. Please contact the first author it you require this exact version of the data.
+	- The Google 300 dimensional embeddings from https://github.com/mmihaltz/word2vec-GoogleNews-vectors. The embedding file must be placed in the folder `embeddings/`. \
+	- The ZuCo data in their latest (January 2019) format. Those data must be placed in the `Data_to_preprocess/` folder. Please contact the first author it you require this exact version of the data.
 
 
 ## Code
@@ -32,11 +30,11 @@ In addition to the code in this repository, wou will need the following data: \
 Potential paramenters for this run are `-s` if you want to save a report of this preprocessing and `-low_def` if you want to save the newly preprocessed EEG signal (the most intensive component memory-wise) with low definition (np.float16).
 
 3. Now you can run all experiments via these three scripts:
-	- run_features_model.py for the experiment on ZuCo data only.
+	- run_features_model.py for the experiment on ZuCo data only. \
 		e.g. `python3 run_features_model.py -we -et -eeg -b -s -opt`
-	- run_stts_embedding_experiment.py for the experiment on SST data with Cross-Validation.
+	- run_stts_embedding_experiment.py for the experiment on SST data with Cross-Validation. \
 		e.g. `python3 run_stts_embedding_experiment.py -we -et -eeg -b -s -opt`
-	- run_stts_embedding_experiment2.py for the experiment on SST data with the official train, dev and test division.
+	- run_stts_embedding_experiment2.py for the experiment on SST data with the official train, dev and test division. \
 		e.g. `python3 run_stts_embedding_experiment2.py -we -et -eeg -b -s -opt`
 
 The parameters for those runs are: \
@@ -48,4 +46,4 @@ The parameters for those runs are: \
 	`-s`	if the data should be saved \
 	`-opt`	if optimized parameters should be added \
 	
-It is also possible to modify the model's parameters from the file of the run (so any of the files written above) or from the default configuration present in configuration/new_configs.py (N.B.: the default configuration is overwritten by any choice made in the "run_*" scripts.).
+It is also possible to modify the model's parameters from the file of the run (so any of the files written above) or from the default configuration present in configuration/new_configs.py (N.B.: the default configuration is overwritten by any choice made in the `run_*` scripts.).
