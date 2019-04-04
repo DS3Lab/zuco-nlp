@@ -1,4 +1,4 @@
-## zuco-nlp
+## NLP with cognitive data
 
 This repository contains all code used in the eperiments described in the following paper: 
 
@@ -8,7 +8,7 @@ This repository contains all code used in the eperiments described in the follow
 
 ### Data
 
-The original ZuCo corpus can be found here: https://osf.io/q3zws/
+The original Zurich Cognitive Language Processing Corpus (ZuCo) corpus can be found here: https://osf.io/q3zws/
 
 ### Named Entity Recognition
 
