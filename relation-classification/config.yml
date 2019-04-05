@@ -61,7 +61,7 @@ features:
   # False (for raw normalized features) or integer (for number of bins)
   binned: False
   eeg: True
-  # options for word level features: RAW_FEATURES, RAW_NORMALIZED_FEATURES, POWER_SPECTRUM_FEATURES_TRT, POWER_SPECTRUM_FEATURES_FF
+  # options for word level features: RAW_FEATURES, RAW_NORMALIZED_FEATURES, POWER_SPECTRUM_FEATURES_TRT, POWER_SPECTRUM_FEATURES_FFD
   eeg_config: RAW_NORMALIZED_FEATURES
   subjects:
     - ZAB
