@@ -2,8 +2,8 @@
 
 This repository contains all code used in the experiments described in the following paper: 
 
-Advancing NLP with Cognitive Language Processing Data.
-Nora Hollenstein, Maria Barrett, Marius Troendle, Francesco Bigiolli, Nicolas Langer & Ce Zhang.
+Nora Hollenstein, Maria Barrett, Marius Troendle, Francesco Bigiolli, Nicolas Langer & Ce Zhang. _Advancing NLP with Cognitive Language Processing Data_. 2019.
+https://arxiv.org/abs/1904.02682
 
 
 ### Data
