@@ -1,6 +1,6 @@
 ## NLP with cognitive data
 
-This repository contains all code used in the eperiments described in the following paper: 
+This repository contains all code used in the experiments described in the following paper: 
 
 Advancing NLP with Cognitive Language Processing Data.
 Nora Hollenstein, Maria Barrett, Marius Troendle, Francesco Bigiolli, Nicolas Langer & Ce Zhang.
