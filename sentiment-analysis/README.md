@@ -2,7 +2,7 @@
 
 In addition to the code in this repository, wou will need the following data: \
 	- The Google 300 dimensional embeddings from https://github.com/mmihaltz/word2vec-GoogleNews-vectors. The embedding file must be placed in the folder `embeddings/`. \
-	- The ZuCo data in their latest (January 2019) format. Those data must be placed in the `Data_to_preprocess/` folder. Please contact the first author it you require this exact version of the data.
+	- The ZuCo data in their latest (January 2019) format. Those data must be placed in the `Data_to_preprocess/` folder. The data can be accesed here: https://osf.io/uxamg/
 
 
 ## Code
